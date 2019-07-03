@@ -18,6 +18,7 @@
     <temple name="swiperCard"  src="./src/module/swiperCard.owo"></temple>
     <temple name="swiperCard2"  src="./src/module/swiperCard2.owo"></temple>
     <temple name="imageTitle" imgSrc="@&title2.png&"  src="https://owo.ink/public/d55fa9be971e070192ccdd1ffc25a117.page"></temple>
+    <temple name="3d-swiper"  src="https://owo.ink/public/9099823707ade3856e855fa8a9c59b0f.page"></temple>
     <temple name="imageTitle" imgSrc="@&title3.png&"  src="https://owo.ink/public/d55fa9be971e070192ccdd1ffc25a117.page"></temple>
   </div>
 </div>
@@ -52,5 +53,8 @@
 }
 .swiper-card {
   margin-bottom: 80px;
+}
+.swiper[template="3d-swiper"] {
+  margin-bottom: 40px;
 }
 </style>

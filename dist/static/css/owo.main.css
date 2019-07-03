@@ -296,6 +296,8 @@ aside[template="imageTitle"] {
   text-align: center;
   height: 19%;
   line-height: 30px;
+  overflow: hidden;
+  letter-spacing: 4px;
 }
 
 [template="swiperCard2"] .people-text {
@@ -369,6 +371,83 @@ aside[template="imageTitle"] {
   height: 60%;
   line-height: 50px;
 }
+.swiper[template="3d-swiper"] {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+  height: 567px;
+}
+
+[template="3d-swiper"] .roundabout-holder {
+  height: 100%;
+  margin: 0 auto;
+}
+
+[template="3d-swiper"] .roundabout-moveable-item {
+  height: 100%;
+  cursor: pointer;
+}
+
+[template="3d-swiper"] .roundabout-moveable-item img {
+  height: 100%;
+  width: 100%;
+}
+
+[template="3d-swiper"] .next {
+  background: url('../resource/right.png') no-repeat;
+  z-index: 9999;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: -80px;
+  cursor: pointer;
+  width: 55px;
+  height: 55px;
+  background-position: center;
+}
+
+[template="3d-swiper"] .prev {
+  background: url('../resource/left.png') no-repeat;
+  width: 55px;
+  height: 55px;
+  background-position: center;
+  z-index: 9999;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: -80px;
+  cursor: pointer;
+}
+
+[template="3d-swiper"] a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+[template="3d-swiper"] ul {
+  overflow: hidden;
+}
+
+[template="3d-swiper"] li {
+  list-style: none;
+  list-style-type: none;
+}
+
+[template="3d-swiper"] em {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  font-style: inherit;
+  width: 98%;
+  padding: 0 1%;
+  line-height: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*p7*/
 [template="home"] .w1160 {
   width: 1160px;
   margin: 0 auto;
@@ -401,4 +480,8 @@ aside[template="imageTitle"] {
 
 [template="home"] .swiper-card {
   margin-bottom: 80px;
+}
+
+[template="home"] .swiper[template="3d-swiper"] {
+  margin-bottom: 40px;
 }

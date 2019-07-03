@@ -99,6 +99,14 @@ module.exports = {
       src: "http://tools.people.com.cn/libs/swiper/2.0/idangerous.swiper.min.js"
     },
     {
+      name: "jquery.easing",
+      src: "http://dangjian.people.com.cn/img/MAIN/2019/05/119287/js/jquery.easing.1.3.js"
+    },
+    {
+      name: "roundabout",
+      src: "http://dangjian.people.com.cn/img/MAIN/2019/05/119287/js/roundabout.js"
+    },
+    {
       name: "main",
       src: "./src/main.js"
     }

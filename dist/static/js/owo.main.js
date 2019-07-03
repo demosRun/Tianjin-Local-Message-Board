@@ -1,4 +1,4 @@
-// Wed Jul 03 2019 18:06:47 GMT+0800 (GMT+08:00)
+// Wed Jul 03 2019 22:36:42 GMT+0800 (GMT+08:00)
 
 "use strict";
 
@@ -66,12 +66,26 @@ owo.script = {
           this.data.swiper.swipeNext();
         },
         "change": function change() {
-          console.log(this.$event.target); // 更换大图
+          var target = this.$event.target; // 更换大图
 
-          this.$el.getElementsByClassName('people-main-image')[0].src = this.$event.target.getElementsByTagName('img')[0].src; // 更换名称
+          this.$el.getElementsByClassName('people-main-image')[0].src = target.getElementsByTagName('img')[0].src; // 更换名称
 
-          this.$el.getElementsByClassName('people-name')[0].innerText = this.$event.target.getElementsByTagName('p')[0].innerText;
+          this.$el.getElementsByClassName('people-name')[0].innerText = target.getElementsByTagName('p')[0].innerText; // 更改说的话
+
+          this.$el.getElementsByClassName('people-text')[0].innerText = target.getElementsByClassName('text')[0].innerText;
+          this.$el.getElementsByClassName('profession')[0].innerText = target.getElementsByClassName('profession')[0].innerText;
           console.log(this.$el.getElementsByClassName('people-name'));
+        },
+        "prop": {}
+      },
+      "3d-swiper": {
+        "created": function created() {
+          $(this.$el.getElementsByTagName('ul')).roundabout({
+            easing: 'easeOutInCirc',
+            duration: 600,
+            btnNext: ".next",
+            btnPrev: ".prev"
+          });
         },
         "prop": {}
       }
@@ -202,6 +216,9 @@ _owo.handlePage = function (pageName, entryDom) {
   }
 };
 /* owo事件处理 */
+// 参数1: 当前正在处理的dom节点
+// 参数2: 当前正在处理的模块名称
+// 参数3: 当前正在处理的模块根dom
 
 
 _owo.handleEvent = function (tempDom, templateName, entryDom) {
@@ -290,29 +307,31 @@ _owo.handleEvent = function (tempDom, templateName, entryDom) {
               }.bind({
                 eventFor: eventFor,
                 templateName: templateName,
-                entryDom: entryDom
+                entryDom: entryDom,
+                tempDom: tempDom
               });
             }
         }
       }
     }
-  }
+  } // 判断是否有子节点需要处理
+
 
   if (tempDom.children) {
-    // console.log(childrenDom)
     // 递归处理所有子Dom结点
     for (var i = 0; i < tempDom.children.length; i++) {
+      // 获取子节点实例
       var childrenDom = tempDom.children[i]; // 每个子节点均要判断是否为模块
 
-      var newTemplateName = templateName;
-
       if (childrenDom.attributes['template'] && childrenDom.attributes['template'].textContent) {
-        newTemplateName = childrenDom.attributes['template'].textContent;
+        // 如果即将遍历进入模块 设置即将进入的模块为当前模块
+        // 获取模块的模块名
+        templateName = childrenDom.attributes['template'].textContent;
+
+        _owo.handleEvent(childrenDom, templateName, childrenDom);
+      } else {
+        _owo.handleEvent(childrenDom, templateName, entryDom);
       }
-
-      var _temp = childrenDom.attributes['template'] ? tempDom : entryDom;
-
-      _owo.handleEvent(childrenDom, newTemplateName, _temp);
     }
   } else {
     console.info('元素不存在子节点!');
@@ -398,36 +417,3 @@ _owo.whenReady = function () {
 
 
 _owo.whenReady(_owo.ready);
-
-function switchPage(oldUrlParam, newUrlParam) {
-  var oldPage = oldUrlParam.split('&')[0];
-  var newPage = newUrlParam.split('&')[0]; // 查找页面跳转前的page页(dom节点)
-  // console.log(oldUrlParam)
-  // 如果源地址获取不到 那么一般是因为源页面为首页
-
-  if (oldPage === undefined) {
-    oldPage = owo.entry;
-  }
-
-  var oldDom = document.getElementById('o-' + oldPage);
-
-  if (oldDom) {
-    // 隐藏掉旧的节点
-    oldDom.style.display = 'none';
-  } // 查找页面跳转后的page
-
-
-  var newDom = document.getElementById('o-' + newPage); // console.log(newDom)
-
-  if (newDom) {
-    // 隐藏掉旧的节点
-    newDom.style.display = 'block';
-  } else {
-    console.error('页面不存在!');
-    return;
-  }
-
-  window.owo.activePage = newPage;
-
-  _owo.handlePage(newPage, newDom);
-}
