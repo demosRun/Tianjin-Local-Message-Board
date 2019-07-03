@@ -1,0 +1,40 @@
+<template>
+  <div class="editor-note">
+    <img align="left" src="@&edit.png&"/>
+    <p>年来，越来越多关注社会民生的百姓选择通过互联网表达诉求，各地也日益重视借助网络平台问计于民、施政于民，帮助基层民众及时而妥善地解决实际问题。2019年是新中国成立70周年，是全面建成小康社会关键之年，人民网联合部分“全国网上群众工作联盟”成员共同推出网民问卷调查活动。<br>您关注身边哪些民生问题？您了解网上群众工作平台吗？您认为上网发声最大的好处是什么？欢迎大家留下宝贵意见，为各地开展网上群众工作提供重要参考。</p>
+  </div>
+</template>
+
+<style lang="less">
+.editor-note {
+  width: 100%;
+  color: white;
+  font-size: 20px;
+  font-family: "Microsoft YaHei";
+  background-repeat: no-repeat;
+  position: relative;
+  margin: 0 auto;
+  img {
+    display: inline;
+    padding-right: 15px;
+  }
+  a {
+    display: inline;
+    color: #7f1c34;
+  }
+}
+p {
+  z-index: 999;
+  padding: 0;
+  margin: 0;
+  display: inline;
+  color: #3a7a60;
+  font-size: 18px;
+  line-height: 32px;
+}
+strong {
+  color: #7f1c34;
+  font-weight: normal;
+  font-size: 19px;
+}
+</style>

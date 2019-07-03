@@ -1,0 +1,256 @@
+<template>
+  <div class="swiper-card">
+    <div class="button arrow-left" @click="prev"></div> 
+    <div class="button arrow-right" @click="next"></div>
+    <div class="card">
+      <div class="people">
+        <img class="people-main-image" width="196" height="261" src="@&people-1.png&"/>\
+      </div>
+      <!-- 职称 -->
+      <p class="profession">内蒙古留言办理工作人员</p>
+      <p class="people-name">张某某</p>
+      <p class="people-text">办好留言打造服务直通车架通便民解优心桥</p>
+      <div class="swiper-container people-list">
+        <div class="swiper-wrapper clear">
+          <div class="swiper-slide">
+            <div class="people-item" @click="change">
+              <p>姓名姓名1</p>
+              <img src="@&people-1.png&"/>
+              <span class="text">办好留言打造服务直通车架通便民解优心桥</span>
+              <span class="profession">内蒙古留言办理工作人员</span>
+            </div>
+            <div class="people-item" @click="change">
+              <p>姓名姓名2</p>
+              <img src="@&people-1.png&"/>
+              <span class="text">办好留言打造服务直通车架通便民解优心桥</span>
+              <span class="profession">内蒙古留言办理工作人员</span>
+            </div>
+            <div class="people-item" @click="change">
+              <p>姓名姓名3</p>
+              <img src="@&people-1.png&"/>
+              <span class="text">办好留言打造服务直通车架通便民解优心桥</span>
+              <span class="profession">内蒙古留言办理工作人员</span>
+            </div>
+            <div class="people-item" @click="change">
+              <p>姓名姓名4</p>
+              <img src="@&people-1.png&"/>
+              <span class="text">办好留言打造服务直通车架通便民解优心桥</span>
+              <span class="profession">内蒙古留言办理工作人员</span>
+            </div>
+            <div class="people-item" @click="change">
+              <p>姓名姓名5</p>
+              <img src="@&people-1.png&"/>
+              <span class="text">办好留言打造服务直通车架通便民解优心桥</span>
+              <span class="profession">内蒙古留言办理工作人员</span>
+            </div>
+            <div class="people-item" @click="change">
+              <p>姓名姓名6</p>
+              <img src="@&people-1.png&"/>
+              <span class="text">办好留言打造服务直通车架通便民解优心桥</span>
+              <span class="profession">内蒙古留言办理工作人员</span>
+            </div>
+            <div class="people-item" @click="change">
+              <p>姓名姓名7</p>
+              <img src="@&people-1.png&"/>
+              <span class="text">办好留言打造服务直通车架通便民解优心桥</span>
+              <span class="profession">内蒙古留言办理工作人员</span>
+            </div>
+            <div class="people-item" @click="change">
+              <p>姓名姓名8</p>
+              <img src="@&people-1.png&"/>
+              <span class="text">办好留言打造服务直通车架通便民解优心桥</span>
+              <span class="profession">内蒙古留言办理工作人员</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="people-item" @click="change">
+              <p>姓名姓名9</p>
+              <img src="@&people-1.png&"/>
+              <span class="text">办好留言打造服务直通车架通便民解优心桥</span>
+              <span class="profession">内蒙古留言办理工作人员</span>
+            </div>
+            <div class="people-item" @click="change">
+              <p>姓名姓名10</p>
+              <img src="@&people-1.png&"/>
+              <span class="text">办好留言打造服务直通车架通便民解优心桥</span>
+              <span class="profession">内蒙古留言办理工作人员</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+module.exports = {
+  data: {
+    swiper: null
+  },
+  created: function () {
+    setTimeout(() => {
+      const dom = this.$el.getElementsByClassName('swiper-container')[0]
+      this.data.swiper = new Swiper(dom, {
+        grabCursor: true
+      })
+    }, 0)
+  },
+  prev: function () {
+    this.data.swiper.swipePrev()
+  },
+  next: function () {
+    this.data.swiper.swipeNext()
+  },
+  change: function () {
+    console.log(this.$event.target)
+    // 更换大图
+    this.$el.getElementsByClassName('people-main-image')[0].src = this.$event.target.getElementsByTagName('img')[0].src
+    // 更换名称
+    this.$el.getElementsByClassName('people-name')[0].innerText = this.$event.target.getElementsByTagName('p')[0].innerText
+    console.log(this.$el.getElementsByClassName('people-name'))
+  }
+}
+</script>
+
+
+<style lang="less">
+.swiper-card {
+  width: 980px;
+  height: 620px;
+  position: relative;
+  margin: 20px auto;
+}
+
+.button {
+  cursor: pointer;
+}
+.arrow-left {
+  background: url('@&left.png&') no-repeat center;
+  position: absolute;
+  left: -80px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 36px;
+  height: 56px;
+  z-index: 999;
+}
+
+.arrow-right {
+  background: url('@&right.png&') no-repeat left bottom;
+  position: absolute;
+  right: -80px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 36px;
+  height: 56px;
+  z-index: 999;
+}
+
+.swiper-container {
+  height: 620px;
+  width: 980px;
+}
+.card {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  position: relative;
+  overflow: hidden;
+}
+
+.people {
+  position: absolute;
+  width: 679px;
+  height: 671px;
+  overflow: hidden;
+  border-radius: 128px;
+  left: -136px;
+  background-position-y: -75px;
+  top: 30px;
+  background-image: url('@&people.png&');
+  img {
+    position: absolute;
+    left: 42%;
+    top: 13.5%;
+  }
+}
+.people-name {
+  font-size: 29px;
+  width: 30px;
+  position: absolute;
+  left: 7%;
+  top: 19%;
+  color: white;
+  writing-mode: tb;
+  text-align: center;
+  height: 19%;
+  line-height: 30px;
+}
+.people-text {
+  font-size: 24px;
+  line-height: 30px;
+  width: 28%;
+  text-align: center;
+  left: 11%;
+  position: absolute;
+  top: 63%;
+  font-weight: bold;
+}
+.people-item {
+  width: 200px;
+  height: 130px;
+  float: left;
+  background-repeat: no-repeat;
+  background-position: 30px -17px;
+  margin: 12px 0;
+  background-image: url('@&people-2.png&');
+  position: relative;
+  img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    overflow: hidden;
+    position: absolute;
+    left: 55px;
+    top: 8px;
+    pointer-events: none;
+  }
+  p {
+    font-size: 15px;
+    writing-mode: tb;
+    text-align: center;
+    height: 100%;
+    font-weight: bold;
+    line-height: 30px;
+    letter-spacing: 2px;
+    pointer-events: none;
+  }
+  span {
+    display: none;
+    pointer-events: none;
+  }
+}
+.people-list {
+  width: 400px;
+  position: absolute;
+  right: 0;
+  height: 100%;
+}
+.profession {
+  font-size: 20px;
+  font-weight: bold;
+  writing-mode: tb;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 60%;
+  line-height: 50px;
+}
+</style>

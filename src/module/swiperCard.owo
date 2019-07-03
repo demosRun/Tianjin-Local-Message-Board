@@ -1,0 +1,131 @@
+<template>
+  <div class="swiper-card">
+    <div class="button arrow-left" @click="prev"></div> 
+    <div class="button arrow-right" @click="next"></div>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" v-for="item in 3">
+          <div class="people">
+            <img width="256" height="256" src="http://www.people.com.cn/NMediaFile/2019/0703/MAIN201907030949192508931358951.jpg"/>\
+          </div>
+          <!-- 领导姓名 -->
+          <p class="people-name">领导姓名：阿尔帕提</p>
+          <!-- 领导说的主题 -->
+          <p class="theme">“能替百姓解决问题，在累我们都值得”</p>
+          <p class="text">办理工作人员的故事为住，要求以小见大，突出故事性，通过典型人物，典型事件体现留言办理工作给群众带来的正面影响。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+module.exports = {
+  data: {
+    swiper: null
+  },
+  created: function () {
+    setTimeout(() => {
+      const dom = this.$el.getElementsByClassName('swiper-container')[0]
+      this.data.swiper = new Swiper(dom, {
+        loop:true,
+        grabCursor: true
+      })
+    }, 0)
+  },
+  prev: function () {
+    this.data.swiper.swipePrev()
+  },
+  next: function () {
+    this.data.swiper.swipeNext()
+  }
+}
+</script>
+
+
+<style lang="less">
+.swiper-card {
+  width: 980px;
+  height: 410px;
+  position: relative;
+  margin: 20px auto;
+  background-image: url('@&spot.png&');
+}
+
+.button {
+  cursor: pointer;
+}
+.arrow-left {
+  background: url('@&left.png&') no-repeat center;
+  position: absolute;
+  left: -80px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 36px;
+  height: 56px;
+  z-index: 999;
+}
+
+.arrow-right {
+  background: url('@&right.png&') no-repeat left bottom;
+  position: absolute;
+  right: -80px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 36px;
+  height: 56px;
+  z-index: 999;
+}
+
+.swiper-container {
+  height: 410px;
+  width: 980px;
+}
+
+.swiper-slide {
+  position: relative;
+  background-image: url('@&spot.png&');
+}
+
+.people {
+  position: absolute;
+  width: 256px;
+  height: 256px;
+  overflow: hidden;
+  border-radius: 128px;
+  right: 30px;
+  top: 30px;
+}
+.people-name {
+  position: absolute;
+  width: 256px;
+  font-size: 28px;
+  line-height: 50px;
+  text-align: center;
+  right: 30px;
+  top: 300px;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.theme {
+  font-size: 41px;
+  line-height: 62px;
+  width: 425px;
+  position: absolute;
+  font-weight: bold;
+  left: 60px;
+  top: 60px;
+}
+.text {
+  font-size: 25px;
+  line-height: 50px;
+  width: 640px;
+  left: 50px;
+  top: 205px;
+  position: absolute;
+  font-family:"SimSun"
+}
+</style>

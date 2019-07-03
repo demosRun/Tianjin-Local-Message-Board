@@ -1,0 +1,19 @@
+<template>
+  <aside>
+    <a href="" target="_blank">
+      <img height="44" src="http://www.people.com.cn/img/2016people/images/dmptLogo.png">
+    </a>
+  </aside>
+</template>
+
+<style>
+aside {
+  height: 44px;
+  text-align: center;
+  overflow: hidden;
+  padding-bottom: 30px;
+}
+a {
+  display: inline-block;
+}
+</style>

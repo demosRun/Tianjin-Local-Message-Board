@@ -1,0 +1,56 @@
+<template>
+<div class="home">
+  <temple name="topBar" logo="http://www.people.com.cn/img/2016people/images/rmw_logo.png"  src="https://owo.ink/public/2259616cc09d409ddece5662234b817e.page"></temple>
+  <div class="bg-box"></div>
+  <div class="head">
+    <div class="w1160">
+      <!-- 编者按 -->
+      <temple name="editor" src="./src/module/editor.owo"></temple>
+      <!-- 主标题文字 -->
+      <temple name="mainText" src="https://owo.ink/public/dd6b009f51ec14716671a02c26a121d0.page"></temple>
+      <!-- 副标题 -->
+      <p class="subtitle">《地方领导留言版》创办12年来，不断帮助各省，市党征领导干部和县委书记倾听网民心声，了解群众困难，吸纳百姓建议。各地领导干部通过人民网《地方留言版》答复网友留言超过100万件。</p>
+    </div>
+  </div>
+  
+  <div class="content-box w1160">
+    <temple name="imageTitle" imgSrc="@&title.png&"  src="https://owo.ink/public/d55fa9be971e070192ccdd1ffc25a117.page"></temple>
+    <temple name="swiperCard"  src="./src/module/swiperCard.owo"></temple>
+    <temple name="swiperCard2"  src="./src/module/swiperCard2.owo"></temple>
+    <temple name="imageTitle" imgSrc="@&title2.png&"  src="https://owo.ink/public/d55fa9be971e070192ccdd1ffc25a117.page"></temple>
+    <temple name="imageTitle" imgSrc="@&title3.png&"  src="https://owo.ink/public/d55fa9be971e070192ccdd1ffc25a117.page"></temple>
+  </div>
+</div>
+</template>
+
+
+<style lang="less">
+.w1160 {
+  width: 1160px;
+  margin: 0 auto;
+}
+.bg-box {
+  height: 500px;
+  background-image: url('@&bg.jpg&');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center top;
+}
+.editor-note {
+  margin-bottom: 20px;
+}
+.subtitle {
+  font-size: 16px;
+  line-height: 30px;
+  color: #4f4f4f;
+  font-weight: bold;
+}
+.head {
+  background-image: url('@&spot.png&');
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+.swiper-card {
+  margin-bottom: 80px;
+}
+</style>

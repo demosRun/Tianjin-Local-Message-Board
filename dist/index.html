@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <title>{TAG_14226_TAG}</title>
+  <!-- 页面的元信息 -->
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=1100, user-scalable=yes,shrink-to-fit=no" />
+  <meta name="format-detection" content="telephone=no, email=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="white" />
+  <meta name="renderer" content="webkit" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="keywords" content="{TAG_59446_TAG}" />
+  <meta name="description" content="{TAG_59447_TAG}" />
+  <meta name="catalogs" content="{TAG_83943_TAG}" />
+  <meta name="filetype" content="1" />
+  <meta name="publishedtype" content="1" />
+  <meta name="pagetype" content="2" />
+  <meta name="screen-orientation" content="portrait" />
+  <meta name="x5-orientation" content="portrait" />
+  <meta name="full-screen" content="yes" />
+  <meta name="x5-fullscreen" content="true" />
+  <meta name="browsermode" content="application" />
+  <meta name="x5-page-mode" content="app" />
+  <!-- 页面主样式文件 -->
+  <link charset="utf-8" rel="stylesheet" href="./static/css/owo.main.css">
+  <!-- 附属css文件 -->
+  <link rel="stylesheet" href="./static/css/main.css" charset="utf-8">
+  <link rel="stylesheet" href="http://tools.people.com.cn/libs/swiper/2.0/idangerous.swiper.css" charset="utf-8">
+
+</head>
+
+<body>
+  <!-- 页面区域 -->
+  <div class="home ox" template="home" id="o-home">
+    <div class="title-bar" template="topBar">
+      <div class="content">
+        <a target="_blank" href="http://www.people.com.cn/">
+          <img width="80" height="30" alt="人民网" title="人民网" src="http://www.people.com.cn/img/2016people/images/rmw_logo.png">
+        </a>
+      </div>
+    </div>
+    <div class="bg-box"></div>
+    <div class="head">
+      <div class="w1160">
+        <!-- 编者按 -->
+        <div class="editor-note" template="editor">
+          <img align="left" src="./static/resource/edit.png">
+          <p>年来，越来越多关注社会民生的百姓选择通过互联网表达诉求，各地也日益重视借助网络平台问计于民、施政于民，帮助基层民众及时而妥善地解决实际问题。2019年是新中国成立70周年，是全面建成小康社会关键之年，人民网联合部分“全国网上群众工作联盟”成员共同推出网民问卷调查活动。<br>您关注身边哪些民生问题？您了解网上群众工作平台吗？您认为上网发声最大的好处是什么？欢迎大家留下宝贵意见，为各地开展网上群众工作提供重要参考。</p>
+        </div>
+        <!-- 主标题文字 -->
+        <h1 template="mainText">
+          <a target="_blank" href="#">地方领导留言版： 百万项回复 亿万颗民心</a>
+        </h1>
+        <!-- 副标题 -->
+        <p class="subtitle">《地方领导留言版》创办12年来，不断帮助各省，市党征领导干部和县委书记倾听网民心声，了解群众困难，吸纳百姓建议。各地领导干部通过人民网《地方留言版》答复网友留言超过100万件。</p>
+      </div>
+    </div>
+
+    <div class="content-box w1160">
+      <aside template="imageTitle">
+        <a href="" target="_blank">
+          <img height="72" src="./static/resource/title.png">
+        </a>
+      </aside>
+      <div class="swiper-card" template="swiperCard">
+        <div class="button arrow-left" @click="prev"></div>
+        <div class="button arrow-right" @click="next"></div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" v-for="item in 3">
+              <div class="people">
+                <img width="256" height="256" src="http://www.people.com.cn/NMediaFile/2019/0703/MAIN201907030949192508931358951.jpg">\
+              </div>
+              <!-- 领导姓名 -->
+              <p class="people-name">领导姓名：阿尔帕提</p>
+              <!-- 领导说的主题 -->
+              <p class="theme">“能替百姓解决问题，在累我们都值得”</p>
+              <p class="text">办理工作人员的故事为住，要求以小见大，突出故事性，通过典型人物，典型事件体现留言办理工作给群众带来的正面影响。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-card" template="swiperCard2">
+        <div class="button arrow-left" @click="prev"></div>
+        <div class="button arrow-right" @click="next"></div>
+        <div class="card">
+          <div class="people">
+            <img class="people-main-image" width="196" height="261" src="./static/resource/people-1.png">\
+          </div>
+          <!-- 职称 -->
+          <p class="profession">内蒙古留言办理工作人员</p>
+          <p class="people-name">张某某</p>
+          <p class="people-text">办好留言打造服务直通车架通便民解优心桥</p>
+          <div class="swiper-container people-list">
+            <div class="swiper-wrapper clear">
+              <div class="swiper-slide">
+                <div class="people-item" @click="change">
+                  <p>姓名姓名1</p>
+                  <img src="./static/resource/people-1.png">
+                  <span class="text">办好留言打造服务直通车架通便民解优心桥</span>
+                  <span class="profession">内蒙古留言办理工作人员</span>
+                </div>
+                <div class="people-item" @click="change">
+                  <p>姓名姓名2</p>
+                  <img src="./static/resource/people-1.png">
+                  <span class="text">办好留言打造服务直通车架通便民解优心桥</span>
+                  <span class="profession">内蒙古留言办理工作人员</span>
+                </div>
+                <div class="people-item" @click="change">
+                  <p>姓名姓名3</p>
+                  <img src="./static/resource/people-1.png">
+                  <span class="text">办好留言打造服务直通车架通便民解优心桥</span>
+                  <span class="profession">内蒙古留言办理工作人员</span>
+                </div>
+                <div class="people-item" @click="change">
+                  <p>姓名姓名4</p>
+                  <img src="./static/resource/people-1.png">
+                  <span class="text">办好留言打造服务直通车架通便民解优心桥</span>
+                  <span class="profession">内蒙古留言办理工作人员</span>
+                </div>
+                <div class="people-item" @click="change">
+                  <p>姓名姓名5</p>
+                  <img src="./static/resource/people-1.png">
+                  <span class="text">办好留言打造服务直通车架通便民解优心桥</span>
+                  <span class="profession">内蒙古留言办理工作人员</span>
+                </div>
+                <div class="people-item" @click="change">
+                  <p>姓名姓名6</p>
+                  <img src="./static/resource/people-1.png">
+                  <span class="text">办好留言打造服务直通车架通便民解优心桥</span>
+                  <span class="profession">内蒙古留言办理工作人员</span>
+                </div>
+                <div class="people-item" @click="change">
+                  <p>姓名姓名7</p>
+                  <img src="./static/resource/people-1.png">
+                  <span class="text">办好留言打造服务直通车架通便民解优心桥</span>
+                  <span class="profession">内蒙古留言办理工作人员</span>
+                </div>
+                <div class="people-item" @click="change">
+                  <p>姓名姓名8</p>
+                  <img src="./static/resource/people-1.png">
+                  <span class="text">办好留言打造服务直通车架通便民解优心桥</span>
+                  <span class="profession">内蒙古留言办理工作人员</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="people-item" @click="change">
+                  <p>姓名姓名9</p>
+                  <img src="./static/resource/people-1.png">
+                  <span class="text">办好留言打造服务直通车架通便民解优心桥</span>
+                  <span class="profession">内蒙古留言办理工作人员</span>
+                </div>
+                <div class="people-item" @click="change">
+                  <p>姓名姓名10</p>
+                  <img src="./static/resource/people-1.png">
+                  <span class="text">办好留言打造服务直通车架通便民解优心桥</span>
+                  <span class="profession">内蒙古留言办理工作人员</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <aside template="imageTitle">
+        <a href="" target="_blank">
+          <img height="72" src="./static/resource/title2.png">
+        </a>
+      </aside>
+      <aside template="imageTitle">
+        <a href="" target="_blank">
+          <img height="72" src="./static/resource/title3.png">
+        </a>
+      </aside>
+    </div>
+  </div>
+  <!-- 框架script文件 -->
+  <script src="./static/js/owo.main.js" type="text/javascript" charset="UTF-8"></script>
+  <!-- 调试-热刷新代码 -->
+  <script src="./static/js/autoReload.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="http://tools.people.com.cn/libs/swiper/2.0/idangerous.swiper.min.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="./static/js/main.js" type="text/javascript" charset="UTF-8"></script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+<template>
+  <h1><a target="_blank" href="#">地方领导留言版： 百万项回复 亿万颗民心</a></h1>
+</template>
+
+<style>
+h1 {
+  font-size: 44px;
+  text-align: center;
+  line-height: 80px;
+  font-family: "Microsoft YaHei";
+}
+a:hover {
+  color: #c00;
+  text-decoration: underline;
+}
+</style>
