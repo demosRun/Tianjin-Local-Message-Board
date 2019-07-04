@@ -448,6 +448,259 @@ aside[template="imageTitle"] {
 }
 
 /*p7*/
+[template="swiperCard21"] .path {
+  background-image: url('../resource/line.png');
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  margin-bottom: 60px;
+}
+
+[template="swiperCard21"] li {
+  width: 71px;
+  height: 68px;
+  background-image: url('../resource/dot.png');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  float: left;
+  margin: 0 37px;
+  cursor: pointer;
+  position: relative;
+}
+
+[template="swiperCard21"] li .place {
+  width: 100%;
+  text-align: center;
+  color: #a0a0a0;
+  font-size: 19px;
+  bottom: -35px;
+  position: absolute;
+  line-height: 20px;
+}
+
+[template="swiperCard21"] li .title,
+[template="swiperCard21"] li .text,
+[template="swiperCard21"] li img {
+  display: none;
+}
+
+[template="swiperCard21"] .active {
+  background-image: url('../resource/dot-active.png');
+}
+
+[template="swiperCard21"] .card {
+  width: 980px;
+  height: 540px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  color: white;
+}
+
+[template="swiperCard21"] .card .show {
+  width: 280px;
+  height: 500px;
+  float: left;
+  padding: 20px;
+  background-color: #c82835;
+}
+
+[template="swiperCard21"] .card img {
+  display: block;
+  float: left;
+}
+
+[template="swiperCard21"] .card .show-title {
+  font-size: 40px;
+  line-height: 60px;
+}
+
+[template="swiperCard21"] .card .show-subtitle {
+  font-size: 26px;
+  line-height: 30px;
+}
+
+[template="swiperCard21"] .card .show-text {
+  font-size: 14px;
+  line-height: 28px;
+  margin-top: 20px;
+}
+ul[template="list"] {
+  padding: 0;
+  margin: 0;
+}
+
+[template="list"] li {
+  color: #595757;
+  line-height: 38px;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  cursor: pointer;
+}
+
+[template="list"] li a {
+  color: black;
+  text-decoration: none;
+}
+
+[template="list"] li a:hover {
+  color: #c00;
+  text-decoration: underline;
+}
+
+[template="list"] li .time {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  font-size: 13px;
+  clear: both;
+}
+
+[template="list"] li {
+  overflow: hidden;
+  height: 38px;
+  background-repeat: no-repeat;
+  background-position: 5px center;
+  padding-left: 20px;
+  background-image: url('../resource/dot-1.png');
+}
+
+[template="list"] a {
+  height: 36px;
+  overflow: hidden;
+  display: block;
+  cursor: pointer;
+}
+
+ul[template="list"] {
+  padding: 0;
+}
+ul[template="list1"] {
+  padding: 0;
+  margin: 0;
+}
+
+[template="list1"] li {
+  color: #595757;
+  line-height: 38px;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  cursor: pointer;
+}
+
+[template="list1"] li a {
+  color: black;
+  text-decoration: none;
+}
+
+[template="list1"] li a:hover {
+  color: #c00;
+  text-decoration: underline;
+}
+
+[template="list1"] li .time {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  font-size: 13px;
+  clear: both;
+}
+
+[template="list1"] li {
+  overflow: hidden;
+  height: 38px;
+  background-repeat: no-repeat;
+  background-position: 5px center;
+  padding-left: 20px;
+  background-image: url('../resource/dot-1.png');
+}
+
+[template="list1"] a {
+  height: 36px;
+  overflow: hidden;
+  display: block;
+  cursor: pointer;
+}
+
+ul[template="list1"] {
+  padding: 0;
+}
+.footer-box {
+  height: 220px;
+  position: relative;
+}
+
+[template="footer"] .content {
+  max-width: 1000px;
+  height: 219px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+[template="footer"] .content-item {
+  float: left;
+}
+
+[template="footer"] .qr-box-item {
+  float: right;
+  margin: 20px 5px;
+  font-weight: bold;
+}
+
+[template="footer"] .logo {
+  width: 50%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('http://liuyan.people.com.cn/img/MAIN/2016/12/117070/images/logo.png');
+}
+
+[template="footer"] .qr-box {
+  height: 160px;
+  margin: 30px 0;
+  width: 50%;
+  position: relative;
+}
+
+[template="footer"] .qr-box img {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+
+[template="footer"] .qr-box .text {
+  color: #4c4c4c;
+  text-align: center;
+  line-height: 35px;
+  font-size: 14px;
+}
+
+[template="footer"] .qr-item {
+  width: 330px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+footer[template="copyright"] {
+  color: #000000;
+  font-size: 12px;
+  position: relative;
+  padding: 40px;
+}
+
+[template="copyright"] p {
+  margin: 12px 0;
+  width: 100%;
+  display: inline-block;
+  line-height: 20px;
+  text-align: center;
+}
 [template="home"] .w1160 {
   width: 1160px;
   margin: 0 auto;
@@ -484,4 +737,44 @@ aside[template="imageTitle"] {
 
 [template="home"] .swiper[template="3d-swiper"] {
   margin-bottom: 40px;
+}
+
+[template="home"] .news-box {
+  width: 820px;
+  margin: 0 auto;
+}
+
+[template="home"] .news {
+  width: 370px;
+  float: left;
+}
+
+[template="home"] .left-news {
+  margin-right: 80px;
+}
+
+[template="home"] footer[template="copyright"] {
+  margin-bottom: 70px;
+}
+
+[template="home"] .bottom-bg {
+  background-image: url('../resource/bottom-bg.png');
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  background-position: bottom;
+  z-index: -1;
+  background-repeat: no-repeat;
+}
+
+[template="home"] .bg-2 {
+  background-image: url('../resource/bg-2.png');
+  position: absolute;
+  top: 22%;
+  width: 100%;
+  height: 25%;
+  background-position: top;
+  z-index: -1;
+  background-repeat: no-repeat;
 }

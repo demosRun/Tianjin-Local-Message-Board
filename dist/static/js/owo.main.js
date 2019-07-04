@@ -1,4 +1,4 @@
-// Wed Jul 03 2019 22:36:42 GMT+0800 (GMT+08:00)
+// Thu Jul 04 2019 11:12:28 GMT+0800 (GMT+08:00)
 
 "use strict";
 
@@ -88,6 +88,101 @@ owo.script = {
           });
         },
         "prop": {}
+      },
+      "swiperCard21": {
+        "data": {
+          "swiper": null
+        },
+        "created": function created() {
+          var show = this.$el.getElementsByTagName('li')[0];
+          var pathFirst = this.$el.getElementsByTagName('li')[0];
+          this.$el.getElementsByClassName('show-title')[0].innerText = pathFirst.getElementsByClassName('place')[0].innerText;
+          this.$el.getElementsByClassName('show-subtitle')[0].innerText = pathFirst.getElementsByClassName('title')[0].innerText;
+          this.$el.getElementsByClassName('show-text')[0].innerText = pathFirst.getElementsByClassName('text')[0].innerText;
+          this.$el.getElementsByTagName('img')[0].src = pathFirst.getElementsByTagName('img')[0].src;
+        },
+        "changeActive": function changeActive() {
+          var target = this.$event.target;
+          var path = this.$el.getElementsByTagName('li');
+
+          for (var key in path) {
+            if (path.hasOwnProperty(key)) {
+              var element = path[key];
+              element.classList.remove('active');
+            }
+          }
+
+          target.classList.add('active');
+          this.$el.getElementsByClassName('show-title')[0].innerText = target.getElementsByClassName('place')[0].innerText;
+          this.$el.getElementsByClassName('show-subtitle')[0].innerText = target.getElementsByClassName('title')[0].innerText;
+          this.$el.getElementsByClassName('show-text')[0].innerText = target.getElementsByClassName('text')[0].innerText;
+          this.$el.getElementsByClassName('main-img')[0].src = target.getElementsByTagName('img')[0].src;
+        },
+        "prop": {}
+      },
+      "list": {
+        "data": {
+          "itemLiat": [{
+            "name": "雅加达，别说再见",
+            "url": "http://www.people.com.cn/",
+            "time": "2018-09-03 13:38"
+          }, {
+            "name": "雅加达亚运夺金练兵兼顾 中国军团提速迈向东京奥运雅加达亚运夺金练兵兼顾 中国军团提速迈向东京奥运雅加达亚运夺金练兵兼顾 中国军团提速迈向东京奥运",
+            "url": "http://www.people.com.cn/",
+            "time": "2018-09-03 13:38"
+          }, {
+            "name": "高清：2018年雅加达亚运会 闭幕式盛况",
+            "url": "http://www.people.com.cn/",
+            "time": "2018-09-03 13:38"
+          }, {
+            "name": "高清：2018雅加达亚运会闭幕式 亚运会会旗交接仪式",
+            "url": "http://www.people.com.cn/",
+            "time": "2018-09-03 13:38"
+          }, {
+            "name": "高清：2018雅加达亚运会闭幕式 “杭州八分钟”惊艳呈现",
+            "url": "http://www.people.com.cn/",
+            "time": "2018-09-03 13:38"
+          }, {
+            "name": "高清：2018雅加达亚运会闭幕式 运动员入场仪式",
+            "url": "http://www.people.com.cn/",
+            "time": "2018-09-03 13:38"
+          }]
+        },
+        "prop": {
+          "class": "left-news news"
+        }
+      },
+      "list1": {
+        "data": {
+          "itemLiat": [{
+            "name": "雅加达，别说再见",
+            "url": "http://www.people.com.cn/",
+            "time": "2018-09-03 13:38"
+          }, {
+            "name": "雅加达亚运夺金练兵兼顾 中国军团提速迈向东京奥运雅加达亚运夺金练兵兼顾 中国军团提速迈向东京奥运雅加达亚运夺金练兵兼顾 中国军团提速迈向东京奥运",
+            "url": "http://www.people.com.cn/",
+            "time": "2018-09-03 13:38"
+          }, {
+            "name": "高清：2018年雅加达亚运会 闭幕式盛况",
+            "url": "http://www.people.com.cn/",
+            "time": "2018-09-03 13:38"
+          }, {
+            "name": "高清：2018雅加达亚运会闭幕式 亚运会会旗交接仪式",
+            "url": "http://www.people.com.cn/",
+            "time": "2018-09-03 13:38"
+          }, {
+            "name": "高清：2018雅加达亚运会闭幕式 “杭州八分钟”惊艳呈现",
+            "url": "http://www.people.com.cn/",
+            "time": "2018-09-03 13:38"
+          }, {
+            "name": "高清：2018雅加达亚运会闭幕式 运动员入场仪式",
+            "url": "http://www.people.com.cn/",
+            "time": "2018-09-03 13:38"
+          }]
+        },
+        "prop": {
+          "class": "news"
+        }
       }
     }
   },
@@ -102,7 +197,9 @@ owo.script = {
     "prop": {
       "imgsrc": "./static/resource/title3.png"
     }
-  }
+  },
+  "footer": {},
+  "copyright": {}
 };
 
 "use strict";

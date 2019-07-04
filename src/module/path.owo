@@ -1,0 +1,162 @@
+<template>
+  <div class="path-box">
+    <ul class="path">
+      <li @click="changeActive" class="active">
+        <p class="place">陕西</p>
+        <p class="title">陕西:办理留言求深耕服务网民带深情</p>
+        <p class="text">办理工作人员的故事为住，要求以小见大，突出故事性，通过典型人物，典型事件体现留言办理工作给群众带来的正面影响。办理工作人员的故事为住，要求以小见大，突出故事性，通过典型人物，典型事件体现留言办理工作给群众带来的正面影响。办理工作人员的故事为住，要求以小见大，突出故事性，通过典型人物，典型事件体现留言办理工作给群众带来的正面影响。</p>
+        <img src="http://www.people.com.cn/NMediaFile/2019/0704/MAIN201907040904493371984323637.jpg"/>
+      </li>
+      <li @click="changeActive">
+        <p class="place">陕西1</p>
+        <p class="title">陕西:办理留言求深耕服务网民带深情</p>
+        <p class="text">办理工作人员的故事为住，要求以小见大，突出故事性，通过典型人物，典型事件体现留言办理工作给群众带来的正面影响。办理工作人员的故事为住，要求以小见大，突出故事性，通过典型人物，典型事件体现留言办理工作给群众带来的正面影响。办理工作人员的故事为住，要求以小见大，突出故事性，通过典型人物，典型事件体现留言办理工作给群众带来的正面影响。</p>
+        <img src="http://www.people.com.cn/NMediaFile/2019/0704/MAIN201907040904490953743988818.jpg"/>
+      </li>
+      <li @click="changeActive">
+        <p class="place">陕西2</p>
+        <p class="title">陕西:办理留言求深耕服务网民带深情</p>
+        <p class="text">办理工作人员的故事为住，要求以小见大，突出故事性，通过典型人物，典型事件体现留言办理工作给群众带来的正面影响。办理工作人员的故事为住，要求以小见大，突出故事性，通过典型人物，典型事件体现留言办理工作给群众带来的正面影响。办理工作人员的故事为住，要求以小见大，突出故事性，通过典型人物，典型事件体现留言办理工作给群众带来的正面影响。</p>
+        <img src="http://www.people.com.cn/NMediaFile/2019/0704/MAIN201907040904493371984323637.jpg"/>
+      </li>
+      <li @click="changeActive">
+        <p class="place">陕西3</p>
+        <p class="title">陕西:办理留言求深耕服务网民带深情</p>
+        <p class="text">办理工作人员的故事为住，要求以小见大，突出故事性，通过典型人物，典型事件体现留言办理工作给群众带来的正面影响。办理工作人员的故事为住，要求以小见大，突出故事性，通过典型人物，典型事件体现留言办理工作给群众带来的正面影响。办理工作人员的故事为住，要求以小见大，突出故事性，通过典型人物，典型事件体现留言办理工作给群众带来的正面影响。</p>
+        <img src="http://www.people.com.cn/NMediaFile/2019/0704/MAIN201907040904493371984323637.jpg"/>
+      </li>
+      <li @click="changeActive">
+        <p class="place">陕西4</p>
+        <p class="title">陕西:办理留言求深耕服务网民带深情</p>
+        <p class="text">办理工作人员的故事为住，要求以小见大，突出故事性，通过典型人物，典型事件体现留言办理工作给群众带来的正面影响。办理工作人员的故事为住，要求以小见大，突出故事性，通过典型人物，典型事件体现留言办理工作给群众带来的正面影响。办理工作人员的故事为住，要求以小见大，突出故事性，通过典型人物，典型事件体现留言办理工作给群众带来的正面影响。</p>
+        <img src="http://www.people.com.cn/NMediaFile/2019/0704/MAIN201907040904493371984323637.jpg"/>
+      </li>
+      <li @click="changeActive">
+        <p class="place">陕西5</p>
+        <p class="title">陕西:办理留言求深耕服务网民带深情</p>
+        <p class="text">办理工作人员的故事为住，要求以小见大，突出故事性，通过典型人物，典型事件体现留言办理工作给群众带来的正面影响。办理工作人员的故事为住，要求以小见大，突出故事性，通过典型人物，典型事件体现留言办理工作给群众带来的正面影响。办理工作人员的故事为住，要求以小见大，突出故事性，通过典型人物，典型事件体现留言办理工作给群众带来的正面影响。</p>
+        <img src="http://www.people.com.cn/NMediaFile/2019/0704/MAIN201907040904493371984323637.jpg"/>
+      </li>
+      <li @click="changeActive">
+        <p class="place">陕西6</p>
+        <p class="title">陕西:办理留言求深耕服务网民带深情</p>
+        <p class="text">办理工作人员的故事为住，要求以小见大，突出故事性，通过典型人物，典型事件体现留言办理工作给群众带来的正面影响。办理工作人员的故事为住，要求以小见大，突出故事性，通过典型人物，典型事件体现留言办理工作给群众带来的正面影响。办理工作人员的故事为住，要求以小见大，突出故事性，通过典型人物，典型事件体现留言办理工作给群众带来的正面影响。</p>
+        <img src="http://www.people.com.cn/NMediaFile/2019/0704/MAIN201907040904493371984323637.jpg"/>
+      </li>
+      <li @click="changeActive">
+        <p class="place">陕西7</p>
+        <p class="title">陕西:办理留言求深耕服务网民带深情</p>
+        <p class="text">办理工作人员的故事为住，要求以小见大，突出故事性，通过典型人物，典型事件体现留言办理工作给群众带来的正面影响。办理工作人员的故事为住，要求以小见大，突出故事性，通过典型人物，典型事件体现留言办理工作给群众带来的正面影响。办理工作人员的故事为住，要求以小见大，突出故事性，通过典型人物，典型事件体现留言办理工作给群众带来的正面影响。</p>
+        <img src="http://www.people.com.cn/NMediaFile/2019/0704/MAIN201907040904493371984323637.jpg"/>
+      </li>
+    </ul>
+    <div class="card clear">
+      <div class="show">
+        <h1 class="show-title"><h1>
+        <h2 class="show-subtitle"></h2>
+        <p class="show-text"></p>
+      </div>
+      <img class="main-img" src="http://www.people.com.cn/NMediaFile/2019/0704/MAIN201907040904493371984323637.jpg" width="660" height="540"/>
+    </div>
+  </div>
+  
+</template>
+
+<script>
+module.exports = {
+  data: {
+    swiper: null
+  },
+  created: function () {
+    const show = this.$el.getElementsByTagName('li')[0]
+    const pathFirst = this.$el.getElementsByTagName('li')[0]
+    this.$el.getElementsByClassName('show-title')[0].innerText = pathFirst.getElementsByClassName('place')[0].innerText
+    this.$el.getElementsByClassName('show-subtitle')[0].innerText = pathFirst.getElementsByClassName('title')[0].innerText
+    this.$el.getElementsByClassName('show-text')[0].innerText = pathFirst.getElementsByClassName('text')[0].innerText
+    this.$el.getElementsByTagName('img')[0].src = pathFirst.getElementsByTagName('img')[0].src
+  },
+  changeActive: function () {
+    const target = this.$event.target
+    const path = this.$el.getElementsByTagName('li')
+    for (const key in path) {
+      if (path.hasOwnProperty(key)) {
+        const element = path[key];
+        element.classList.remove('active')
+      }
+    }
+    target.classList.add('active')
+    this.$el.getElementsByClassName('show-title')[0].innerText = target.getElementsByClassName('place')[0].innerText
+    this.$el.getElementsByClassName('show-subtitle')[0].innerText = target.getElementsByClassName('title')[0].innerText
+    this.$el.getElementsByClassName('show-text')[0].innerText = target.getElementsByClassName('text')[0].innerText
+    this.$el.getElementsByClassName('main-img')[0].src = target.getElementsByTagName('img')[0].src
+  }
+}
+</script>
+
+<style lang="less">
+  .path {
+    background-image: url('@&line.png&');
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin-bottom: 60px;
+  }
+  li {
+    width: 71px;
+    height: 68px;
+    background-image: url('@&dot.png&');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    float: left;
+    margin: 0 37px;
+    cursor: pointer;
+    position: relative;
+    .place {
+      width: 100%;
+      text-align: center;
+      color: #a0a0a0;
+      font-size: 19px;
+      bottom: -35px;
+      position: absolute;
+      line-height: 20px;
+    }
+    .title, .text, img {
+      display: none;
+    }
+  }
+  .active {
+    background-image: url('@&dot-active.png&');
+  }
+  .card {
+    width: 980px;
+    height: 540px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    color: white;
+    .show {
+      width: 280px;
+      height: 500px;
+      float: left;
+      padding: 20px;
+      background-color: #c82835;
+    }
+    img {
+      display: block;
+      float: left;
+    }
+    .show-title {
+      font-size: 40px;
+      line-height: 60px;
+    }
+    .show-subtitle {
+      font-size: 26px;
+      line-height: 30px;
+    }
+    .show-text {
+      font-size: 14px;
+      line-height: 28px;
+      margin-top: 20px;
+    }
+  }
+</style>

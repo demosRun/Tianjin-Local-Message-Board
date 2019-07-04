@@ -20,7 +20,19 @@
     <temple name="imageTitle" imgSrc="@&title2.png&"  src="https://owo.ink/public/d55fa9be971e070192ccdd1ffc25a117.page"></temple>
     <temple name="3d-swiper"  src="https://owo.ink/public/9099823707ade3856e855fa8a9c59b0f.page"></temple>
     <temple name="imageTitle" imgSrc="@&title3.png&"  src="https://owo.ink/public/d55fa9be971e070192ccdd1ffc25a117.page"></temple>
+    <temple name="swiperCard2"  src="./src/module/path.owo"></temple>
+    <!-- 新闻列表 -->
+    <div class="news-box clear">
+      <temple name="list" class="left-news news"  src="https://owo.ink/public/9d65b02ceaf5c7938c4c0a5531777e93.page"></temple>
+      <temple name="list" class="news" src="https://owo.ink/public/9d65b02ceaf5c7938c4c0a5531777e93.page"></temple>
+    </div>
   </div>
+  <temple name="footer"  src="https://owo.ink/public/6058c6a5ed9add6317483f957740938c.page"></temple>
+  <temple name="copyright"  src="https://owo.ink/public/f94894ed060f2de25b4cb1ea7cab716d.page"></temple>
+  <!-- 底部背景图 -->
+  <div class="bottom-bg"></div>
+  <!-- 中间背景图 -->
+  <div class="bg-2"></div>
 </div>
 </template>
 
@@ -56,5 +68,39 @@
 }
 .swiper[template="3d-swiper"] {
   margin-bottom: 40px;
+}
+.news-box {
+  width: 820px;
+  margin: 0 auto;
+}
+.news {
+  width: 370px;
+  float: left;
+}
+.left-news {
+  margin-right: 80px;
+}
+footer[template="copyright"] {
+  margin-bottom: 70px;
+}
+.bottom-bg {
+  background-image: url('@&bottom-bg.png&');
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  background-position: bottom;
+  z-index: -1;
+  background-repeat: no-repeat;
+}
+.bg-2 {
+  background-image: url('@&bg-2.png&');
+  position: absolute;
+  top: 22%;
+  width: 100%;
+  height: 25%;
+  background-position: top;
+  z-index: -1;
+  background-repeat: no-repeat;
 }
 </style>

@@ -6,10 +6,9 @@
 
 <style lang="less">
   footer {
-    color: #ffffff;
+    color: #000000;
     font-size: 12px;
     position: relative;
-    background-color: #e32f1e;
     padding: 40px;
   }
   p {
