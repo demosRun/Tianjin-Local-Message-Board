@@ -1,8 +1,6 @@
 <template>
   <aside>
-    <a href="" target="_blank">
-      <img height="72" src="{{prop.imgsrc}}">
-    </a>
+    <img height="72" src="{{prop.imgsrc}}">
   </aside>
 </template>
 
@@ -12,8 +10,9 @@ aside {
   text-align: center;
   overflow: hidden;
   padding-bottom: 50px;
+  position: relative;
 }
-a {
+a, img {
   display: inline-block;
 }
 </style>

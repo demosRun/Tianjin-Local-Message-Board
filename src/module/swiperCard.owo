@@ -6,7 +6,7 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide" v-for="item in 3">
           <div class="people">
-            <img width="256" height="256" src="http://www.people.com.cn/NMediaFile/2019/0703/MAIN201907030949192508931358951.jpg"/>\
+            <img width="256" height="256" src="http://www.people.com.cn/NMediaFile/2019/0703/MAIN201907030949192508931358951.jpg"/>
           </div>
           <!-- 领导姓名 -->
           <p class="people-name">领导姓名：阿尔帕提</p>
@@ -80,8 +80,8 @@ module.exports = {
 }
 
 .swiper-container {
-  height: 410px;
-  width: 980px;
+  height: 100%;
+  width: 100%;
 }
 
 .swiper-slide {

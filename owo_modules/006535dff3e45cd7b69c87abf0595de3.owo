@@ -15,12 +15,15 @@
 <script>
 module.exports = {
   created: function () {
-    $(this.$el.getElementsByTagName('ul')).roundabout({
-      easing: 'easeOutInCirc',
-      duration: 600,
-      btnNext: ".next",
-      btnPrev: ".prev"
-    })
+    setTimeout(() => {
+      $(this.$el.getElementsByTagName('ul')).roundabout({
+        easing: 'easeOutInCirc',
+        duration: 600,
+        btnNext: ".next",
+        btnPrev: ".prev",
+        minScale: 0.8
+      })
+    }, 0)
   }
 }
 </script>
@@ -78,6 +81,7 @@ ul {
   overflow: hidden;
 }
 li {
+  width: 486px;
   list-style: none;
   list-style-type: none;
 }

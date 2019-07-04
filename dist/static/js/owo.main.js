@@ -1,4 +1,4 @@
-// Thu Jul 04 2019 11:12:28 GMT+0800 (GMT+08:00)
+// Thu Jul 04 2019 15:44:42 GMT+0800 (GMT+08:00)
 
 "use strict";
 
@@ -80,12 +80,17 @@ owo.script = {
       },
       "3d-swiper": {
         "created": function created() {
-          $(this.$el.getElementsByTagName('ul')).roundabout({
-            easing: 'easeOutInCirc',
-            duration: 600,
-            btnNext: ".next",
-            btnPrev: ".prev"
-          });
+          var _this3 = this;
+
+          setTimeout(function () {
+            $(_this3.$el.getElementsByTagName('ul')).roundabout({
+              easing: 'easeOutInCirc',
+              duration: 600,
+              btnNext: ".next",
+              btnPrev: ".prev",
+              minScale: 0.8
+            });
+          }, 0);
         },
         "prop": {}
       },
