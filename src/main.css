@@ -56,7 +56,7 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
 
 .page {
   width: 100%;
-  height: 100wh;
+  height: 100vh;
   position: relative;
   overflow: hidden;
   display: none;
@@ -73,6 +73,7 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
 }
 
 .min [template="home"] .w1160 {
+  height: 100%;
   width: calc(100% - 50px);
 }
 
@@ -286,15 +287,21 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
   width: 100%;
 }
 
+.min .swiper-card[template="swiperCard2"] {
+  height: calc(100% - 332px);
+  margin-bottom: 0;
+}
+
 .min [template="swiperCard2"] .people {
   width: 100%;
   left: 0;
+  top: 0;
   background-size: 100%;
 }
 
 .min [template="swiperCard2"] .people-name {
   left: 27%;
-  top: 6%;
+  top: 2%;
   font-size: 12px;
   text-align: left;
 }
@@ -305,4 +312,27 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
   top: 0;
   width: 30%;
   height: auto;
+}
+
+.min [template="swiperCard2"] .profession {
+  font-size: 14px;
+  text-align: left;
+  letter-spacing: 2px;
+}
+
+.min [template="swiperCard2"] .people-list {
+  position: relative;
+  width: 100%;
+}
+
+.min [template="swiperCard2"] .people-item {
+  width: 10vw;
+}
+
+.min [template="swiperCard2"] .people-text {
+  width: 48%;
+  font-size: 12px;
+  line-height: 20px;
+  left: 31%;
+  top: 39%;
 }
