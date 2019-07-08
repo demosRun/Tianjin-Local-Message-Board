@@ -715,6 +715,11 @@ footer[template="copyright"] {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center top;
+  position: relative;
+}
+
+[template="home"] .bg-box img {
+  display: none;
 }
 
 [template="home"] .editor-note {

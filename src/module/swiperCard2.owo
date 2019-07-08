@@ -4,7 +4,7 @@
     <div class="button arrow-right" @click="next"></div>
     <div class="card">
       <div class="people">
-        <img class="people-main-image" width="196" height="261" src="@&people-1.png&"/>\
+        <img class="people-main-image" width="196" height="261" src="@&people-1.png&"/>
       </div>
       <!-- 职称 -->
       <p class="profession">内蒙古留言办理工作人员</p>

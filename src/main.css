@@ -53,25 +53,43 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
 }
 
 /* 网页常用样式 */
+
+.page {
+  width: 100%;
+  height: 100wh;
+  position: relative;
+  overflow: hidden;
+  display: none;
+}
+.min {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
 .min .bg-box {
-  background-image: url('@&min-bg.jpg&');
-  height: 78vw;
+  background-image: url('@&home-bg.jpg&');
+  width: 100%;
+  height: 100vh;
 }
 
 .min [template="home"] .w1160 {
-  width: calc(100% - 20px);
+  width: calc(100% - 50px);
 }
 
 .min [template="editor"] p {
   font-size: 14px;
+  line-height: 22px;
 }
 
 .min h1[template="mainText"] {
-  font-size: 16px;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 10px;
 }
 
 .min [template="home"] .subtitle {
   font-size: 14px;
+  line-height: 25px;
 }
 
 
@@ -95,10 +113,10 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
 }
 
 .min [template="swiperCard"] .theme {
-  font-size: 20px;
-  width: 74vw;
+  font-size: 18px;
+  width: 49vw;
   line-height: 23px;
-  left: 25px;
+  left: 20px;
   top: 25px;
 }
 
@@ -109,36 +127,39 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
 
 .min [template="swiperCard"] .people {
   right: 15px;
-  top: 75px;
+  top: 30px;
 }
 
 .min [template="swiperCard"] .text {
-  font-size: 14px;
-  width: 59vw;
+  font-size: 12px;
+  width: 46vw;
   left: 20px;
-  top: 95px;
+  top: 75px;
   line-height: 20px;
+  color: #0f0f0f;
 }
 
 .min [template="swiperCard"] .people-name {
-  top: 170px;
+  top: 130px;
   font-size: 12px;
-  width: 130px;
+  width: 115px;
   right: 0;
   line-height: 22px;
 }
 
 .min [template="swiperCard"] .arrow-left {
-  left: -4%;
-  width: 18px;
+  left: -8%;
+  width: 14px;
   height: 28px;
+  background: url("@&left-min.png&") no-repeat center;
   background-size: 100%;
 }
 
 .min [template="swiperCard"] .arrow-right {
-  right: -4%;
-  width: 18px;
+  right: -8%;
+  width: 14px;
   height: 28px;
+  background: url("@&right-min.png&") no-repeat center;
   background-size: 100%;
 }
 
@@ -218,4 +239,70 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
   float: none;
   width: 100%;
   margin: 0;
+}
+
+
+.min .title-bar {
+  display: none;
+}
+
+.min .bg-box img {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 10%;
+  bottom: 0;
+  margin: auto;
+}
+
+.min .head {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background-size: 100% 100%;
+  background-image: url('@&two-bg.jpg&');
+}
+.min [template="home"] .bottom-bg, .min [template="home"] .bg-2 {
+  display: none;
+}
+
+.min .editor-note img {
+  display: block;
+  float: none;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 20%;
+  padding-bottom: 5%;
+}
+
+.page-3 {
+  display: block;
+  background-size: 100% 100%;
+  background-image: url('@&three-bg.jpg&');
+}
+
+.min [template="home"] .swiper-card {
+  width: 100%;
+}
+
+.min [template="swiperCard2"] .people {
+  width: 100%;
+  left: 0;
+  background-size: 100%;
+}
+
+.min [template="swiperCard2"] .people-name {
+  left: 27%;
+  top: 6%;
+  font-size: 12px;
+  text-align: left;
+}
+
+.min [template="swiperCard2"] .people img {
+  position: absolute;
+  left: 42%;
+  top: 0;
+  width: 30%;
+  height: auto;
 }

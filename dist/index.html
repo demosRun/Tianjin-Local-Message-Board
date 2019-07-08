@@ -41,8 +41,13 @@
         </a>
       </div>
     </div>
-    <div class="bg-box"></div>
-    <div class="head">
+    <!-- 第一页 -->
+    <div class="bg-box page">
+      <!-- 手机版才会有内容 -->
+      <img src="./static/resource/home-min.png">
+    </div>
+    <!-- 第二页 -->
+    <div class="head page">
       <div class="w1160">
         <!-- 编者按 -->
         <div class="editor-note" template="editor">
@@ -57,110 +62,115 @@
         <p class="subtitle">《地方领导留言版》创办12年来，不断帮助各省，市党征领导干部和县委书记倾听网民心声，了解群众困难，吸纳百姓建议。各地领导干部通过人民网《地方留言版》答复网友留言超过100万件。</p>
       </div>
     </div>
-
+    <!-- 第三页 -->
+    <div class="page page-3">
+      <div class="content-box w1160">
+        <aside template="imageTitle">
+          <img height="72" src="./static/resource/title.png">
+        </aside>
+        <div class="swiper-card" template="swiperCard">
+          <div class="button arrow-left" @click="prev"></div>
+          <div class="button arrow-right" @click="next"></div>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" v-for="item in 3">
+                <div class="people">
+                  <img width="256" height="256" src="http://www.people.com.cn/NMediaFile/2019/0703/MAIN201907030949192508931358951.jpg">
+                </div>
+                <!-- 领导姓名 -->
+                <p class="people-name">领导姓名：阿尔帕提</p>
+                <!-- 领导说的主题 -->
+                <p class="theme">“能替百姓解决问题，在累我们都值得”</p>
+                <p class="text">办理工作人员的故事为住，要求以小见大，突出故事性，通过典型人物，典型事件体现留言办理工作给群众带来的正面影响。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-card" template="swiperCard2">
+          <div class="button arrow-left" @click="prev"></div>
+          <div class="button arrow-right" @click="next"></div>
+          <div class="card">
+            <div class="people">
+              <img class="people-main-image" width="196" height="261" src="./static/resource/people-1.png">
+            </div>
+            <!-- 职称 -->
+            <p class="profession">内蒙古留言办理工作人员</p>
+            <p class="people-name">张某某</p>
+            <p class="people-text">办好留言打造服务直通车架通便民解优心桥</p>
+            <div class="swiper-container people-list">
+              <div class="swiper-wrapper clear">
+                <div class="swiper-slide">
+                  <div class="people-item" @click="change">
+                    <p>姓名1</p>
+                    <img src="./static/resource/people-1.png">
+                    <span class="text">办好留言打造服务直通车架通便民解优心桥1</span>
+                    <span class="profession">内蒙古留言办理工作人员1</span>
+                  </div>
+                  <div class="people-item" @click="change">
+                    <p>姓名2</p>
+                    <img src="./static/resource/people-1.png">
+                    <span class="text">办好留言打造服务直通车架通便民解优心桥2</span>
+                    <span class="profession">内蒙古留言办理工作人员2</span>
+                  </div>
+                  <div class="people-item" @click="change">
+                    <p>姓名3</p>
+                    <img src="./static/resource/people-1.png">
+                    <span class="text">办好留言打造服务直通车架通便民解优心桥3</span>
+                    <span class="profession">内蒙古留言办理工作人员3</span>
+                  </div>
+                  <div class="people-item" @click="change">
+                    <p>姓名4</p>
+                    <img src="http://www.people.com.cn/NMediaFile/2019/0627/MAIN201906270856265403090269953.jpg">
+                    <span class="text">办好留言打造服务直通车架通便民解优心桥4</span>
+                    <span class="profession">内蒙古留言办理工作人员4</span>
+                  </div>
+                  <div class="people-item" @click="change">
+                    <p>姓名5</p>
+                    <img src="./static/resource/people-1.png">
+                    <span class="text">办好留言打造服务直通车架通便民解优心桥5</span>
+                    <span class="profession">内蒙古留言办理工作人员5</span>
+                  </div>
+                  <div class="people-item" @click="change">
+                    <p>姓名6</p>
+                    <img src="http://www.people.com.cn/NMediaFile/2019/0627/MAIN201906270856265403090269953.jpg">
+                    <span class="text">办好留言打造服务直通车架通便民解优心桥6</span>
+                    <span class="profession">内蒙古留言办理工作人员6</span>
+                  </div>
+                  <div class="people-item" @click="change">
+                    <p>姓名7</p>
+                    <img src="./static/resource/people-1.png">
+                    <span class="text">办好留言打造服务直通车架通便民解优心桥7</span>
+                    <span class="profession">内蒙古留言办理工作人员7</span>
+                  </div>
+                  <div class="people-item" @click="change">
+                    <p>姓名8</p>
+                    <img src="http://www.people.com.cn/NMediaFile/2019/0627/MAIN201906270856265403090269953.jpg">
+                    <span class="text">办好留言打造服务直通车架通便民解优心桥8</span>
+                    <span class="profession">内蒙古留言办理工作人员8</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="people-item" @click="change">
+                    <p>姓名9</p>
+                    <img src="./static/resource/people-1.png">
+                    <span class="text">办好留言打造服务直通车架通便民解优心桥9</span>
+                    <span class="profession">内蒙古留言办理工作人员</span>
+                  </div>
+                  <div class="people-item" @click="change">
+                    <p>姓名10</p>
+                    <img src="./static/resource/people-1.png">
+                    <span class="text">办好留言打造服务直通车架通便民解优心桥10</span>
+                    <span class="profession">内蒙古留言办理工作人员</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 第四页 -->
     <div class="content-box w1160">
-      <aside template="imageTitle">
-        <img height="72" src="./static/resource/title.png">
-      </aside>
-      <div class="swiper-card" template="swiperCard">
-        <div class="button arrow-left" @click="prev"></div>
-        <div class="button arrow-right" @click="next"></div>
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide" v-for="item in 3">
-              <div class="people">
-                <img width="256" height="256" src="http://www.people.com.cn/NMediaFile/2019/0703/MAIN201907030949192508931358951.jpg">
-              </div>
-              <!-- 领导姓名 -->
-              <p class="people-name">领导姓名：阿尔帕提</p>
-              <!-- 领导说的主题 -->
-              <p class="theme">“能替百姓解决问题，在累我们都值得”</p>
-              <p class="text">办理工作人员的故事为住，要求以小见大，突出故事性，通过典型人物，典型事件体现留言办理工作给群众带来的正面影响。</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-card" template="swiperCard2">
-        <div class="button arrow-left" @click="prev"></div>
-        <div class="button arrow-right" @click="next"></div>
-        <div class="card">
-          <div class="people">
-            <img class="people-main-image" width="196" height="261" src="./static/resource/people-1.png">\
-          </div>
-          <!-- 职称 -->
-          <p class="profession">内蒙古留言办理工作人员</p>
-          <p class="people-name">张某某</p>
-          <p class="people-text">办好留言打造服务直通车架通便民解优心桥</p>
-          <div class="swiper-container people-list">
-            <div class="swiper-wrapper clear">
-              <div class="swiper-slide">
-                <div class="people-item" @click="change">
-                  <p>姓名1</p>
-                  <img src="./static/resource/people-1.png">
-                  <span class="text">办好留言打造服务直通车架通便民解优心桥1</span>
-                  <span class="profession">内蒙古留言办理工作人员1</span>
-                </div>
-                <div class="people-item" @click="change">
-                  <p>姓名2</p>
-                  <img src="./static/resource/people-1.png">
-                  <span class="text">办好留言打造服务直通车架通便民解优心桥2</span>
-                  <span class="profession">内蒙古留言办理工作人员2</span>
-                </div>
-                <div class="people-item" @click="change">
-                  <p>姓名3</p>
-                  <img src="./static/resource/people-1.png">
-                  <span class="text">办好留言打造服务直通车架通便民解优心桥3</span>
-                  <span class="profession">内蒙古留言办理工作人员3</span>
-                </div>
-                <div class="people-item" @click="change">
-                  <p>姓名4</p>
-                  <img src="http://www.people.com.cn/NMediaFile/2019/0627/MAIN201906270856265403090269953.jpg">
-                  <span class="text">办好留言打造服务直通车架通便民解优心桥4</span>
-                  <span class="profession">内蒙古留言办理工作人员4</span>
-                </div>
-                <div class="people-item" @click="change">
-                  <p>姓名5</p>
-                  <img src="./static/resource/people-1.png">
-                  <span class="text">办好留言打造服务直通车架通便民解优心桥5</span>
-                  <span class="profession">内蒙古留言办理工作人员5</span>
-                </div>
-                <div class="people-item" @click="change">
-                  <p>姓名6</p>
-                  <img src="http://www.people.com.cn/NMediaFile/2019/0627/MAIN201906270856265403090269953.jpg">
-                  <span class="text">办好留言打造服务直通车架通便民解优心桥6</span>
-                  <span class="profession">内蒙古留言办理工作人员6</span>
-                </div>
-                <div class="people-item" @click="change">
-                  <p>姓名7</p>
-                  <img src="./static/resource/people-1.png">
-                  <span class="text">办好留言打造服务直通车架通便民解优心桥7</span>
-                  <span class="profession">内蒙古留言办理工作人员7</span>
-                </div>
-                <div class="people-item" @click="change">
-                  <p>姓名8</p>
-                  <img src="http://www.people.com.cn/NMediaFile/2019/0627/MAIN201906270856265403090269953.jpg">
-                  <span class="text">办好留言打造服务直通车架通便民解优心桥8</span>
-                  <span class="profession">内蒙古留言办理工作人员8</span>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="people-item" @click="change">
-                  <p>姓名9</p>
-                  <img src="./static/resource/people-1.png">
-                  <span class="text">办好留言打造服务直通车架通便民解优心桥9</span>
-                  <span class="profession">内蒙古留言办理工作人员</span>
-                </div>
-                <div class="people-item" @click="change">
-                  <p>姓名10</p>
-                  <img src="./static/resource/people-1.png">
-                  <span class="text">办好留言打造服务直通车架通便民解优心桥10</span>
-                  <span class="profession">内蒙古留言办理工作人员</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <aside template="imageTitle">
         <img height="72" src="./static/resource/title2.png">
       </aside>
