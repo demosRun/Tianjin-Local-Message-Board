@@ -26,17 +26,30 @@
     </div>
   </div>
   <!-- 第四页 -->
-  <div class="content-box w1160">
-    <temple name="imageTitle" imgSrc="@&title2.png&"  src="https://owo.ink/public/d55fa9be971e070192ccdd1ffc25a117.page"></temple>
-    <temple name="3d-swiper"  src="https://owo.ink/public/9099823707ade3856e855fa8a9c59b0f.page"></temple>
-    <temple name="imageTitle" imgSrc="@&title3.png&"  src="https://owo.ink/public/d55fa9be971e070192ccdd1ffc25a117.page"></temple>
-    <temple name="swiperCard2"  src="./src/module/path.owo"></temple>
-    <!-- 新闻列表 -->
-    <div class="news-box clear">
-      <temple name="list" class="left-news news"  src="https://owo.ink/public/9d65b02ceaf5c7938c4c0a5531777e93.page"></temple>
-      <temple name="list" class="news" src="https://owo.ink/public/9d65b02ceaf5c7938c4c0a5531777e93.page"></temple>
+  <div class="page page-4">
+    <div class="content-box w1160">
+      <temple name="imageTitle" imgSrc="@&title2.png&"  src="https://owo.ink/public/d55fa9be971e070192ccdd1ffc25a117.page"></temple>
+      <temple name="3d-swiper"  src="https://owo.ink/public/9099823707ade3856e855fa8a9c59b0f.page"></temple>
     </div>
   </div>
+
+  <div class="page page-5">
+    <div class="content-box w1160">
+      <temple name="imageTitle" imgSrc="@&title3.png&"  src="https://owo.ink/public/d55fa9be971e070192ccdd1ffc25a117.page"></temple>
+      <temple name="swiperCard2"  src="./src/module/path.owo"></temple>
+    </div>
+  </div>
+
+  <div class="page page-6">
+    <div class="content-box w1160">
+      <!-- 新闻列表 -->
+      <div class="news-box clear">
+        <temple name="list" class="left-news news"  src="https://owo.ink/public/9d65b02ceaf5c7938c4c0a5531777e93.page"></temple>
+        <temple name="list" class="news" src="https://owo.ink/public/9d65b02ceaf5c7938c4c0a5531777e93.page"></temple>
+      </div>
+    </div>
+  </div>
+  
   <temple name="footer"  src="https://owo.ink/public/6058c6a5ed9add6317483f957740938c.page"></temple>
   <temple name="copyright"  src="https://owo.ink/public/f94894ed060f2de25b4cb1ea7cab716d.page"></temple>
   <!-- 底部背景图 -->

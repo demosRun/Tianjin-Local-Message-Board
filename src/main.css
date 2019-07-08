@@ -148,16 +148,16 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
   line-height: 22px;
 }
 
-.min [template="swiperCard"] .arrow-left {
-  left: -8%;
+.min .arrow-left {
+  left: -20px;
   width: 14px;
   height: 28px;
   background: url("@&left-min.png&") no-repeat center;
   background-size: 100%;
 }
 
-.min [template="swiperCard"] .arrow-right {
-  right: -8%;
+.min .arrow-right {
+  right: -20px;
   width: 14px;
   height: 28px;
   background: url("@&right-min.png&") no-repeat center;
@@ -278,7 +278,6 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
 }
 
 .page-3 {
-  display: block;
   background-size: 100% 100%;
   background-image: url('@&three-bg.jpg&');
 }
@@ -296,7 +295,10 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
   width: 100%;
   left: 0;
   top: 0;
-  background-size: 100%;
+  height: calc(100% - 145px);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .min [template="swiperCard2"] .people-name {
@@ -308,10 +310,10 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
 
 .min [template="swiperCard2"] .people img {
   position: absolute;
-  left: 42%;
-  top: 0;
-  width: 30%;
-  height: auto;
+  left: 46%;
+  top: 24%;
+  height: 40%;
+  width: auto;
 }
 
 .min [template="swiperCard2"] .profession {
@@ -321,12 +323,18 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
 }
 
 .min [template="swiperCard2"] .people-list {
-  position: relative;
+  bottom: 0;
   width: 100%;
+  height: 160px;
 }
 
 .min [template="swiperCard2"] .people-item {
-  width: 10vw;
+  width: 25%;
+  height: 50%;
+  overflow: hidden;
+  background-size: calc(100% - 20px);
+  background-position: 22px;
+  margin: 0;
 }
 
 .min [template="swiperCard2"] .people-text {
@@ -335,4 +343,24 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
   line-height: 20px;
   left: 31%;
   top: 39%;
+}
+
+.min [template="swiperCard2"] .swiper-slide {
+  width: 100%;
+  position: relative;
+}
+
+.min [template="swiperCard2"] .people-item img {
+  width: 10vw;
+  height: 10vw;
+  left: 32px;
+  top: 23px;
+}
+
+.min [template="swiperCard2"] .people-item p {
+  font-size: 12px;
+}
+
+.page-6 {
+  display: block;
 }

@@ -5,4 +5,5 @@ $(function () {
    // 手机屏幕下缩放路径卡片
    $('.path-box .card').css('transform', 'scale(' + (window.screen.width - 20) / 980  + ')')
  }
+ // 手势控制
 })
