@@ -461,13 +461,13 @@ aside[template="imageTitle"] {
 }
 
 [template="swiperCard21"] li {
-  width: 71px;
+  width: 72px;
   height: 68px;
   background-image: url('../resource/dot.png');
   background-repeat: no-repeat;
   background-position: center bottom;
   float: left;
-  margin: 0 37px;
+  margin: 0 22px;
   cursor: pointer;
   position: relative;
 }
