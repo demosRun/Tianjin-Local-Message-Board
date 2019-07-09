@@ -3,7 +3,7 @@ body, html {
   margin: 0;
   padding: 0;
   user-select: text;
-  font: normal 12px/180% "SimSun";
+  font: normal 12px/100% "SimSun";
   -webkit-overflow-scrolling: touch;
   width: 100%;
   overflow-x: hidden;
@@ -54,17 +54,22 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
 
 /* 网页常用样式 */
 
-.page {
+.min .page {
   width: 100%;
   height: 100vh;
   position: relative;
   overflow: hidden;
-  display: none;
 }
 .min {
   width: 100%;
   height: 100vh;
   overflow: hidden;
+}
+.min .home {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  transition: top 0.6s linear;
 }
 .min .bg-box {
   background-image: url('../resource/home-bg.jpg');
@@ -75,11 +80,12 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
 .min [template="home"] .w1160 {
   height: 100%;
   width: calc(100% - 50px);
+  position: relative;
 }
 
 .min [template="editor"] p {
-  font-size: 14px;
-  line-height: 22px;
+  font-size: 10px;
+  line-height: 16px;
 }
 
 .min h1[template="mainText"] {
@@ -109,16 +115,20 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
 
 .min .swiper-card[template="swiperCard"] {
   width: 96%;
-  height: 200px;
-  margin-bottom: 0;
+  height: 80%;
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+  margin: auto;
 }
 
 .min [template="swiperCard"] .theme {
-  font-size: 18px;
-  width: 49vw;
-  line-height: 23px;
+  font-size: 22px;
+  width: 70vw;
+  line-height: 30px;
   left: 20px;
-  top: 25px;
+  top: 170px;
+  text-align: justify;
 }
 
 .min [template="swiperCard"] .people, .min [template="swiperCard"] .people img {
@@ -127,25 +137,30 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
 }
 
 .min [template="swiperCard"] .people {
-  right: 15px;
+  right: 0;
+  left: 0;
   top: 30px;
+  margin: auto;
 }
 
 .min [template="swiperCard"] .text {
-  font-size: 12px;
-  width: 46vw;
+  font-size: 16px;
+  width: 70vw;
   left: 20px;
-  top: 75px;
-  line-height: 20px;
+  top: 260px;
+  line-height: 35px;
   color: #0f0f0f;
+  text-align: justify;
 }
 
 .min [template="swiperCard"] .people-name {
   top: 130px;
   font-size: 12px;
   width: 115px;
-  right: 0;
   line-height: 22px;
+  right: 0;
+  left: 0;
+  margin: auto;
 }
 
 .min .arrow-left {
@@ -166,12 +181,12 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
 
 .min .swiper[template="3d-swiper"] {
   width: 100%;
-  height: 60vw;
+  height: calc(100% - 100px);
 }
 
 .min [template="3d-swiper"] li, .min [template="3d-swiper"] li img, .min [template="3d-swiper"] li a {
-  width: 50vw;
-  height: 60vw;
+  width: 80vw;
+  height: 100vw;
 }
 
 .min [template="3d-swiper"] .prev {
@@ -190,6 +205,7 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
   margin: 0;
   margin-bottom: 35px;
   margin-top: 11px;
+  width: 17%;
 }
 
 .min [template="swiperCard21"] .path {
@@ -198,10 +214,12 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
   margin-bottom: 0;
   background-size: auto 120px;
   background-position: center right;
+  overflow: hidden;
 }
 
 .min [template="swiperCard21"] .card {
   transform-origin: left top;
+  margin-top: 10vh;
 }
 
 .min .path-box {
@@ -214,18 +232,26 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
   overflow: hidden;
 }
 
+.min [template="home"] .news {
+  width: 100%;
+  margin-top: 10px;
+}
+
 .min .news li {
   font-size: 14px;
+  line-height: 24px;
+  height: 24px;
   font-weight: normal;
 }
 
 .min [template="home"] footer[template="copyright"] {
   margin-bottom: 0;
-  padding: 40px 20px;
+  padding: 0;
+  font-size: 10px;
 }
 
 .min [template="footer"] .content {
-  height: 250px;
+  height: 100%;
   position: relative;
   margin-top: 20px;
 }
@@ -233,13 +259,15 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
 .min [template="footer"] .logo {
   float: none;
   width: 100%;
-  height: 90px;
+  height: 24%;
+  background-size: 150px;
 }
 
 .min [template="footer"] .qr-box {
   float: none;
   width: 100%;
   margin: 0;
+  height: 130px;
 }
 
 
@@ -273,39 +301,53 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
   float: none;
   margin: 0 auto;
   padding: 0;
-  padding-top: 20%;
+  padding-top: 5%;
   padding-bottom: 5%;
 }
 
-.page-3 {
+.min .page-3, .min .page-3-2, .min .page-4, .min .page-5 {
   background-size: 100% 100%;
   background-image: url('../resource/three-bg.jpg');
 }
 
-.min [template="home"] .swiper-card {
-  width: 100%;
+.min .page-3-2 .content-box {
+  margin: 25px;
+  height: calc(100% - 50px);
+  background-image: url('../resource/spot.png');
+}
+
+.min .page-3-2 [template="home"] .swiper-card {
+  width: 980px;
 }
 
 .min .swiper-card[template="swiperCard2"] {
-  height: calc(100% - 332px);
+  height: 1500px;
   margin-bottom: 0;
+  transform-origin: left top;
+  margin: 0;
 }
 
 .min [template="swiperCard2"] .people {
   width: 100%;
   left: 0;
+  margin: 0 auto;
+  right: 0;
   top: 0;
-  height: calc(100% - 145px);
+  height: 980px;
   background-size: auto 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .min [template="swiperCard2"] .people-name {
-  left: 27%;
-  top: 2%;
-  font-size: 12px;
+  left: -37%;
+  right: 0;
+  top: 249px;
+  font-size: 50px;
   text-align: left;
+  margin: auto;
+  width: 100px;
+  line-height: 100px;
 }
 
 .min [template="swiperCard2"] .people img {
@@ -317,15 +359,23 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
 }
 
 .min [template="swiperCard2"] .profession {
-  font-size: 14px;
+  font-size: 67px;
   text-align: left;
   letter-spacing: 2px;
+  width: 60px;
+  overflow: hidden;
+  line-height: 60px;
+  left: 70px;
+  top: 70px;
 }
 
 .min [template="swiperCard2"] .people-list {
   bottom: 0;
-  width: 100%;
-  height: 160px;
+  width: calc(100% - 40px);
+  height: 420px;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 .min [template="swiperCard2"] .people-item {
@@ -335,14 +385,15 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
   background-size: calc(100% - 20px);
   background-position: 22px;
   margin: 0;
+  position: relative;
 }
 
 .min [template="swiperCard2"] .people-text {
-  width: 48%;
-  font-size: 12px;
-  line-height: 20px;
-  left: 31%;
-  top: 39%;
+  width: 56%;
+  font-size: 42px;
+  line-height: 68px;
+  left: 30%;
+  top: 643px;
 }
 
 .min [template="swiperCard2"] .swiper-slide {
@@ -351,16 +402,70 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
 }
 
 .min [template="swiperCard2"] .people-item img {
-  width: 10vw;
-  height: 10vw;
-  left: 32px;
-  top: 23px;
+  width: 140px;
+  height: 140px;
+  left: 24%;
+  top: 20%;
+  border-radius: 70px;
 }
 
 .min [template="swiperCard2"] .people-item p {
+  display: block;
+  font-size: 30px;
+  width: 40px;
+  line-height: 40px;
+  height: 200px;
+  position: absolute;
+  left: -5px;
+}
+
+.min .page-6 {
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url('../resource/four-bg.jpg');
+}
+
+.min [template="footer"] .left, .min [template="footer"] .right {
+  display: none;
+}
+
+.min [template="footer"] .qr-item {
+  width: 100%;
+  height: 130px;
+}
+
+.min [template="footer"] .qr-box-item {
+  margin: 0 auto;
+  float: none;
+  width: 100px;
+}
+
+.min [template="footer"] .qr-box .text {
+  line-height: 25px;
   font-size: 12px;
 }
 
-.page-6 {
-  display: block;
+.min .footer-box {
+  height: calc(100% - 420px);
+  overflow: hidden;
+}
+
+.min [template="copyright"] p {
+  font-size: 6px;
+}
+
+
+.min [template="swiperCard2"] .arrow-right {
+  right: -60px;
+  width: 60px;
+  height: 87px;
+  top: 27%;
+}
+
+.min [template="swiperCard2"] .arrow-left {
+  left: -60px;
+  width: 60px;
+  height: 87px;
+  top: 27%;
 }

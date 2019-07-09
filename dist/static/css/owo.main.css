@@ -710,7 +710,7 @@ footer[template="copyright"] {
 }
 
 [template="home"] .bg-box {
-  height: 500px;
+  height: 450px;
   background-image: url('../resource/bg.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
@@ -723,7 +723,7 @@ footer[template="copyright"] {
 }
 
 [template="home"] .editor-note {
-  margin-bottom: 20px;
+  padding: 20px 0;
 }
 
 [template="home"] .subtitle {
