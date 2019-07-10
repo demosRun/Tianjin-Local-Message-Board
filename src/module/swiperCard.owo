@@ -26,7 +26,7 @@ module.exports = {
   },
   created: function () {
     setTimeout(() => {
-      const dom = this.$el.getElementsByClassName('swiper-container')[0]
+      const dom = this.query('.swiper-container')[0]
       this.data.swiper = new Swiper(dom, {
         loop:true,
         grabCursor: true

@@ -89,7 +89,7 @@ module.exports = {
   },
   created: function () {
     setTimeout(() => {
-      const dom = this.$el.getElementsByClassName('swiper-container')[0]
+      const dom = this.query('.swiper-container')[0]
       this.data.swiper = new Swiper(dom, {
         grabCursor: true
       })
@@ -104,13 +104,13 @@ module.exports = {
   change: function () {
     const target = this.$event.target
     // 更换大图
-    this.$el.getElementsByClassName('people-main-image')[0].src = target.getElementsByTagName('img')[0].src
+    this.query('.people-main-image')[0].src = target.getElementsByTagName('img')[0].src
     // 更换名称
-    this.$el.getElementsByClassName('people-name')[0].innerText = target.getElementsByTagName('p')[0].innerText
+    this.query('.people-name')[0].innerText = target.getElementsByTagName('p')[0].innerText
     // 更改说的话
-    this.$el.getElementsByClassName('people-text')[0].innerText = target.getElementsByClassName('text')[0].innerText
-    this.$el.getElementsByClassName('profession')[0].innerText = target.getElementsByClassName('profession')[0].innerText
-    console.log(this.$el.getElementsByClassName('people-name'))
+    this.query('.people-text')[0].innerText = target.querySelectorAll('.text')[0].innerText
+    this.query('.profession')[0].innerText = target.querySelectorAll('.profession')[0].innerText
+    console.log(this.query('.people-name'))
   }
 }
 </script>

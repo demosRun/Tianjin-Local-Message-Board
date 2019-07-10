@@ -82,9 +82,9 @@ module.exports = {
   created: function () {
     const show = this.$el.getElementsByTagName('li')[0]
     const pathFirst = this.$el.getElementsByTagName('li')[0]
-    this.$el.getElementsByClassName('show-title')[0].innerText = pathFirst.getElementsByClassName('place')[0].innerText
-    this.$el.getElementsByClassName('show-subtitle')[0].innerText = pathFirst.getElementsByClassName('title')[0].innerText
-    this.$el.getElementsByClassName('show-text')[0].innerText = pathFirst.getElementsByClassName('text')[0].innerText
+    this.query('.show-title')[0].innerText = pathFirst.querySelectorAll('.place')[0].innerText
+    this.query('.show-subtitle')[0].innerText = pathFirst.querySelectorAll('.title')[0].innerText
+    this.query('.show-text')[0].innerText = pathFirst.querySelectorAll('.text')[0].innerText
     this.$el.getElementsByTagName('img')[0].src = pathFirst.getElementsByTagName('img')[0].src
   },
   changeActive: function () {
@@ -97,10 +97,10 @@ module.exports = {
       }
     }
     target.classList.add('active')
-    this.$el.getElementsByClassName('show-title')[0].innerText = target.getElementsByClassName('place')[0].innerText
-    this.$el.getElementsByClassName('show-subtitle')[0].innerText = target.getElementsByClassName('title')[0].innerText
-    this.$el.getElementsByClassName('show-text')[0].innerText = target.getElementsByClassName('text')[0].innerText
-    this.$el.getElementsByClassName('main-img')[0].src = target.getElementsByTagName('img')[0].src
+    this.query('.show-title')[0].innerText = target.querySelectorAll('.place')[0].innerText
+    this.query('.show-subtitle')[0].innerText = target.querySelectorAll('.title')[0].innerText
+    this.query('.show-text')[0].innerText = target.querySelectorAll('.text')[0].innerText
+    this.query('.main-img')[0].src = target.getElementsByTagName('img')[0].src
   }
 }
 </script>
